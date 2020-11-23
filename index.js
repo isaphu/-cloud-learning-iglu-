@@ -18,3 +18,20 @@ console.log(firstName + " " + lastName);
 
 const interestRate = 0.3;
 console.log(interestRate);
+
+let person = {
+  firstNameOne: "Isa",
+  lastNameOne: "Phuyuthanon",
+};
+
+//dot notation
+console.log(
+  "My name is " +
+    person.firstNameOne +
+    " and my surename is " +
+    person.lastNameOne
+);
+
+//bracket notation
+person["firstNameOne"] = "Mary";
+console.log(person.firstNameOne);
