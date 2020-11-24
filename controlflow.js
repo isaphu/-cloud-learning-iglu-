@@ -53,3 +53,22 @@ for (let i = 5; i >= 1; i--) {
     if(i % 2 !== 0)
     console.log(i);
 }
+
+//while loops 
+// let i = 0;
+/* while(condition) {
+    statement 
+    incrementExpression
+} */
+
+// while(i <= 5) {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// }
+
+// do...while loop (always execute the code one even if the condition is false)
+let i = 2
+do {
+    if (i % 2 !== 0) console.log(i);
+    i++;
+} while (i <= 5);
