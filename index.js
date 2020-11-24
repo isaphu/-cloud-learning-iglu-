@@ -112,3 +112,17 @@ console.log("Eligible", eligibleForAdvance);
 
 let notEligible = !eligibleForAdvance;
 console.log("Application is not eligible", notEligible);
+
+// logical non-boolean falsy or thruthy (undefined, null, 0, false, ' ', NaN)
+// sets logical OR, for P v Q is true if and only if atleast one of P or Q is true
+// let checkValue = false || true;
+console.log(false || true);
+console.log(false || "Isa");
+console.log(false || 1);
+console.log(true || true);
+
+//if the user has specified for bedroom furniture use its furniture if not use furniture from kitchen
+let bedRoomFurniture = undefined;
+let kitchenRoomFurniture = "table";
+let checkFurniture = bedRoomFurniture || kitchenRoomFurniture;
+console.log(checkFurniture);
