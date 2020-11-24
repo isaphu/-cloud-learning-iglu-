@@ -148,3 +148,14 @@ myPermission = writePermission | executePermission;
 
 let message = (myPermission & readPermission) ? 'Yes' : 'No'
 console.log(message);
+
+
+//programming brain test
+let aaa = 'Isa';
+let bbb = 'Mary';
+
+let ccc = aaa;
+aaa = bbb;
+bbb= ccc;
+console.log(aaa); //Mary
+console.log(bbb); //Isa
