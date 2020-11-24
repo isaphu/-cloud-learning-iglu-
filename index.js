@@ -62,3 +62,31 @@ function morningGreeting(companyName, employeeId) {
 morningGreeting("Iglu", 344321);
 morningGreeting("Johnson & Johnson", 122190);
 morningGreeting("Netflix", 9901909);
+
+//calculating a value
+
+function addingNumber(number) {
+  return number + number;
+}
+
+console.log(addingNumber("5", 5));
+console.log(addingNumber(5, 5));
+console.log(typeof addingNumber("20", 20));
+console.log(typeof addingNumber(5, 5));
+
+//adding two array
+let favsThing = [];
+let favsColor = ["yellow", "red", "blue"];
+let favsFood = ["burger", "steak", "padthai"];
+
+const newObj = favsColor.concat(favsFood);
+console.log(newObj);
+console.log(typeof newObj);
+
+function arrayConcat(favsThing) {
+  return favsThing.concat();
+}
+console.log(arrayConcat(favsColor, favsFood));
+
+const newArray = favsThing.concat(favsColor, favsFood);
+console.log(newArray);
