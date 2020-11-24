@@ -97,3 +97,18 @@ let points = 50;
 let typeOfCustomer = points > 100 ? "Gold" : "Silver";
 
 console.log(typeOfCustomer);
+
+//logical AND &&, OR ||, NOT !
+
+let a = true;
+let b = true;
+let checkValue = a && b;
+console.log(checkValue);
+
+let gradeAStudent = false;
+let assignmentRecieved = false;
+let eligibleForAdvance = gradeAStudent || assignmentRecieved;
+console.log("Eligible", eligibleForAdvance);
+
+let notEligible = !eligibleForAdvance;
+console.log("Application is not eligible", notEligible);
