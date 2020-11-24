@@ -90,3 +90,10 @@ console.log(arrayConcat(favsColor, favsFood));
 
 const newArray = favsThing.concat(favsColor, favsFood);
 console.log(newArray);
+
+//ternary operation
+
+let points = 50;
+let typeOfCustomer = points > 100 ? "Gold" : "Silver";
+
+console.log(typeOfCustomer);
