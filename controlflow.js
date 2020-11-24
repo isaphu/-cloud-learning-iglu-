@@ -21,13 +21,13 @@ let employeePosition = 'manager';
 
 switch (employeePosition) {
     case 'manager':
-    console.log('Manager Level 02');
+        console.log('Manager Level 02');
     break;
     case 'officer':
-    console.log('Officer Level 01');
+        console.log('Officer Level 01');
     break;
     default: 
-    console.log('Unknown User');
+        console.log('Unknown User');
 }
 
 let employeePosition2 = "officer";
@@ -35,9 +35,21 @@ let wage2 = 11000;
 if (employeePosition == 'officer' && wage2 >= 100 || wage2 <2500)
     console.log('This role need to be consider for wage increase');
 else if (employeePosition == 'officer' && wage2 >= 2500 || wage2 < 5000)
-console.log('This role doesn\'t nedd to be consider for wage increase');
+    console.log('This role doesn\'t nedd to be consider for wage increase');
 else if (employeePosition == 'manager' && wage2 <10000)
-console.log('This role need to be promoted but doesn\'t need to consider for wage increase');
+    console.log('This role need to be promoted but doesn\'t need to consider for wage increase');
 else 
-console.log('consider case by case')
+    console.log('consider case by case')
 
+// for loops 
+//for (initialExpression; condition and compare the value with initial; increamentExpression)
+
+let favsColor = ['yello', 'red', 'brown', 'blue','green','grey','purple','pink'];
+for (let i = 0; i < 2; i++) {
+    console.log(favsColor[2], i);
+}
+
+for (let i = 5; i >= 1; i--) {
+    if(i % 2 !== 0)
+    console.log(i);
+}
