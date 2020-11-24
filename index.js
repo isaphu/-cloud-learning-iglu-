@@ -54,3 +54,11 @@ selectedColors[4] = {
   antagonist: "Hermione Granger",
 };
 console.log(selectedColors.length);
+
+//function
+function morningGreeting(companyName, employeeId) {
+  console.log("Good Monring " + employeeId + " from " + companyName + " !");
+}
+morningGreeting("Iglu", 344321);
+morningGreeting("Johnson & Johnson", 122190);
+morningGreeting("Netflix", 9901909);
