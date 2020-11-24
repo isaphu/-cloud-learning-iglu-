@@ -126,3 +126,25 @@ let bedRoomFurniture = undefined;
 let kitchenRoomFurniture = "table";
 let checkFurniture = bedRoomFurniture || kitchenRoomFurniture;
 console.log(checkFurniture);
+ 
+
+ //bitwise OR 
+console.log(1 | 2) 
+/* because 
+1 = 00000001 and 
+2 = 00000010 the result is 
+3 = 00000011 */
+
+//useing bitwise operator to let user read,write and exeute
+// 00000100
+// 00000010
+// 00000111
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+myPermission = writePermission | executePermission;
+
+let message = (myPermission & readPermission) ? 'Yes' : 'No'
+console.log(message);
