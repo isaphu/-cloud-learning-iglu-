@@ -5,12 +5,12 @@ console.log("My name is Isa");
 let name = "Isa";
 console.log(name);
 
-//naming things:
-//can't be a reserved keyword
-//meaningful label
-//can't start with number
-//can't contain space or hyphen
-// name or case-sensitive use camelCase
+/* naming things:
+can't be a reserved keyword
+meaningful label
+can't start with number
+can't contain space or hyphen
+name or case-sensitive use camelCase */
 
 let firstName = "Isa";
 let lastName = "Phuyuthanon";
@@ -35,3 +35,14 @@ console.log(
 //bracket notation
 person["firstNameOne"] = "Mary";
 console.log(person.firstNameOne);
+
+//JS object
+let personInfo = {
+  name: ["Isa", "Mary", "Johs"],
+  age: [26, 30, 35],
+};
+console.log(
+  "My name is " + personInfo.name[1] + " and I am " + personInfo.age[1]
+);
+
+//array
