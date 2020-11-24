@@ -55,20 +55,34 @@ for (let i = 5; i >= 1; i--) {
 }
 
 //while loops 
-// let i = 0;
+let i = 0;
 /* while(condition) {
     statement 
     incrementExpression
 } */
 
-// while(i <= 5) {
-//     if (i % 2 !== 0) console.log(i);
-//     i++;
-// }
-
-// do...while loop (always execute the code one even if the condition is false)
-let i = 2
-do {
+while(i <= 5) {
     if (i % 2 !== 0) console.log(i);
     i++;
-} while (i <= 5);
+}
+
+// do...while loop (always execute the code one even if the condition is false)
+let s = 2
+do {
+    if (s % 2 !== 0) console.log(s);
+    s++;
+} while (s <= 5);
+
+
+//for in loop
+const personInfo = {
+    name: 'Mary',
+    age: 26
+};
+
+for(let key in personInfo)
+    console.log(key, personInfo[key])
+
+const favsFurniture = ['sofa','chair','stool'];
+for (let index in favsFurniture)
+    console.log(index, favsFurniture[index])
