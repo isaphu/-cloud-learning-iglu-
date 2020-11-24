@@ -46,3 +46,11 @@ console.log(
 );
 
 //array
+let selectedColors = ["yellow", "red", "blue"];
+selectedColors[3] = "green";
+selectedColors[4] = {
+  name: "Harry Potter",
+  person: "Ron Wesley",
+  antagonist: "Hermione Granger",
+};
+console.log(selectedColors.length);
