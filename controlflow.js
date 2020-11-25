@@ -108,9 +108,9 @@ while (q <= 5) {
 }
 
 //max of the two number exercise 
+
 function maxNumber(num1,num2) {
-    if (num1 > num2) console.log(num1) ;
-    else console.log(num2);
+    console.log((num1 > num2) ? num1 : num2);
 }
 
-maxNumber(9,11)
+maxNumber(8,2)
