@@ -108,9 +108,16 @@ while (q <= 5) {
 }
 
 //max of the two number exercise 
-function maxNumber(num1,num2) {
-    if (num1 > num2) console.log(num1) ;
-    else console.log(num2);
-}
 
-maxNumber(9,11)
+function maxNumber(num1,num2) {
+    console.log((num1 > num2) ? num1 : num2);
+}
+maxNumber(8,2)
+
+//landscape or not
+
+console.log(photoDimension(800,700));
+
+function photoDimension(width, height) {
+    return (width > height);
+}
