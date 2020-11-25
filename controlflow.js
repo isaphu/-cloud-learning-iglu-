@@ -112,5 +112,12 @@ while (q <= 5) {
 function maxNumber(num1,num2) {
     console.log((num1 > num2) ? num1 : num2);
 }
-
 maxNumber(8,2)
+
+//landscape or not
+console.log(photoDimension(800,700));
+
+function photoDimension(width, height) {
+    return (width > height);
+}
+
