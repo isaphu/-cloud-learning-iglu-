@@ -106,3 +106,11 @@ while (q <= 5) {
   console.log(q);
   q++;
 }
+
+//max of the two number exercise 
+function maxNumber(num1,num2) {
+    if (num1 > num2) console.log(num1) ;
+    else console.log(num2);
+}
+
+maxNumber(9,11)
