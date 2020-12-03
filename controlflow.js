@@ -107,17 +107,22 @@ while (q <= 5) {
   q++;
 }
 
-//max of the two number exercise 
+//max of the two number exercise
 
-function maxNumber(num1,num2) {
-    console.log((num1 > num2) ? num1 : num2);
+function maxNumber(num1, num2) {
+  console.log(num1 > num2 ? num1 : num2);
 }
-maxNumber(8,2)
+maxNumber(8, 2);
 
 //landscape or not
 
-console.log(photoDimension(800,700));
+console.log(photoDimension(800, 700));
 
 function photoDimension(width, height) {
-    return (width > height);
+  return width > height;
+}
+
+//even or odd number
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++) {}
 }
