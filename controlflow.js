@@ -122,8 +122,8 @@ function photoDimension(width, height) {
 }
 
 //demerit point
-export function checkSpeed(speed) {
-  const speedLimit = 70;
+function checkSpeed(speed) {
+  const speedLimit = 71;
   const kilometerPerPoint = 5;
 
   if (speed < speedLimit + kilometerPerPoint) {
@@ -135,9 +135,9 @@ export function checkSpeed(speed) {
   if (point >= 12) console.log("Your license has been suspended");
   else console.log("Your point is: ", point);
 }
-
 checkSpeed(80);
-//even or odd number
-function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {}
-}
+
+// //even or odd number
+// function showNumbers(limit) {
+//   for (let i = 0; i <= limit; i++) {}
+// }
