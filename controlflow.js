@@ -122,7 +122,7 @@ function photoDimension(width, height) {
 }
 
 //demerit point
-function checkSpeed(speed) {
+export function checkSpeed(speed) {
   const speedLimit = 70;
   const kilometerPerPoint = 5;
 
