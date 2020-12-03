@@ -64,7 +64,7 @@ for (let i = 5; i >= 1; i--) {
 //while loops
 let i = 0;
 /* while(condition) {
-    statement 
+    statement
     incrementExpression
 } */
 
@@ -115,13 +115,28 @@ function maxNumber(num1, num2) {
 maxNumber(8, 2);
 
 //landscape or not
-
 console.log(photoDimension(800, 700));
 
 function photoDimension(width, height) {
   return width > height;
 }
 
+//demerit point
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const kilometerPerPoint = 5;
+
+  if (speed < speedLimit + kilometerPerPoint) {
+    console.log("Ok");
+    return;
+  }
+
+  const point = Math.floor((speed - speedLimit) / kilometerPerPoint);
+  if (point >= 12) console.log("Your license has been suspended");
+  else console.log("Your point is: ", point);
+}
+
+checkSpeed(80);
 //even or odd number
 function showNumbers(limit) {
   for (let i = 0; i <= limit; i++) {}
