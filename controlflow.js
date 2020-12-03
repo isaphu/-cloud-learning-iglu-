@@ -137,3 +137,7 @@ function checkSpeed(speed) {
 }
 
 checkSpeed(80);
+//even or odd number
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++) {}
+}
