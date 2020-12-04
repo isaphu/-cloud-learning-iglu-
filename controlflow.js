@@ -137,7 +137,22 @@ function checkSpeed(speed) {
 }
 checkSpeed(80);
 
-// //even or odd number
-// function showNumbers(limit) {
-//   for (let i = 0; i <= limit; i++) {}
-// }
+
+//even or odd number
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++) {
+    //   if (i % 2 == 0)
+    //   console.log(i, " is an even number");
+    //   else
+    //   console.log(i, " is an odd number");
+    //the below code is cleaner:
+    const message = i % 2 == 0 ? "is an even number" : "is an odd number";
+    console.log(i, message);
+  }
+}
+showNumbers(30);
+
+//count truthty
+function countTruthy(array) {
+    
+}

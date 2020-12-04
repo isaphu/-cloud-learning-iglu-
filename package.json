@@ -4,7 +4,11 @@
   "description": "learning new staff",
   "main": "basicANDoperator.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "test"
+=======
+    "test": "jest"
+>>>>>>> main
   },
   "repository": {
     "type": "git",
