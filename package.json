@@ -1,27 +1,23 @@
 {
-  "name": "-cloud-learning-iglu-",
-  "version": "1.0.0",
-  "description": "learning new staff",
-  "main": "basicANDoperator.js",
-  "scripts": {
-<<<<<<< HEAD
-    "test": "test"
-=======
-    "test": "jest"
->>>>>>> main
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/isaphu/-cloud-learning-iglu-.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/isaphu/-cloud-learning-iglu-/issues"
-  },
-  "homepage": "https://github.com/isaphu/-cloud-learning-iglu-#readme",
-  "devDependencies": {
-    "jest": "^26.6.3"
-  }
+    "name": "-cloud-learning-iglu-",
+    "version": "1.0.0",
+    "description": "learning new staff",
+    "main": "basicANDoperator.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isaphu/-cloud-learning-iglu-.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/isaphu/-cloud-learning-iglu-/issues"
+    },
+    "homepage": "https://github.com/isaphu/-cloud-learning-iglu-#readme",
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
 }
