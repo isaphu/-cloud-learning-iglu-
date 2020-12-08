@@ -150,11 +150,11 @@ function showNumbers(limit) {
         console.log(i, message);
     }
 }
-showNumbers(30);
+showNumbers(5);
 
 //grade
 
-const array = [80, 80, 50];
+const array3 = [90, 90, 90, 90, 90, 90, 90, 70, 60, 70];
 
 /* 
 1-59: F
@@ -164,7 +164,7 @@ const array = [80, 80, 50];
 90-100: A
 */
 
-function calculationGrade(marks) {
+function calculateGrade(marks) {
     const average = calculateAvg(marks)
     if (average < 60) return 'F';
     if (average < 70) return 'D';
@@ -173,10 +173,11 @@ function calculationGrade(marks) {
     return 'A';
 }
 
-function calculateAvg(array) {
+function calculateAvg(array3) {
     let sum = 0
-    for (let value of array)
+    for (let value of array3)
         sum += value;
-    reuturn = sum / array.length;
-
+    return sum / array3.length;
 }
+
+console.log(calculateGrade(array3))
