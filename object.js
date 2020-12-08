@@ -15,3 +15,38 @@ const circle = {
 };
 
 circle.draw(); //method
+
+//factory function it produces object
+
+function createCircle(radius) {
+    return {
+        radius, //porperties
+        draw() {
+            console.log('factory function produces object')
+
+        }
+    };
+}
+
+const circle1 = createCircle(1);
+console.log(circle1)
+circle1.draw();
+
+
+
+//constructor, use pascal notation for example OneTwoThreeFour
+//the THIS keyword refer to the object that execute this piece of code
+const myCircle = createCircle(1);
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('this is constructor function');
+    }
+}
+
+//the NEW operator first create an empty object
+//then it will set THIS to point to object (const x = {}) 
+//finally it will return an object from the Circle function    
+const circle2 = new Circle(1);
+const x = {};
