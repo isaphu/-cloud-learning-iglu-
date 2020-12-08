@@ -201,16 +201,15 @@ showStars(3)
 //composite for example 11 = 1,11 or 13 = 1, 13
 
 function showPrimes(limit) {
-    for (let number = 2; number <= limit; number++) {
-        let isPrime = true;
-        for (let factor = 2; factor < number; factor++) {
-            if (number % factor === 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) console.log(number);
-    }
+    for (let number = 2; number <= limit; number++)
+        if (isPrime(number)) console.log(number);
 }
 
-showPrimes(50)
+function isPrime(number) {
+    for (let factor = 2; factor < number; factor++)
+        if (number % factor === 0)
+            return false;
+    return true;
+}
+
+showPrimes(10)
