@@ -1,3 +1,4 @@
+
 //if..else
 //if wage is 100 - 1000: underpaid
 //if wage is 1000-2000: ok
@@ -193,3 +194,23 @@ function showStars(rows) {
     }
 }
 showStars(3)
+
+//prime number
+
+//prime (whose factors are only 1 and itself) for example 12 = 1,2,3,4,6,12, can be divided evenly by its factors
+//composite for example 11 = 1,11 or 13 = 1, 13
+
+function showPrimes(limit) {
+    for (let number = 2; number <= limit; number++) {
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+            if (number % factor === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) console.log(number);
+    }
+}
+
+showPrimes(50)
