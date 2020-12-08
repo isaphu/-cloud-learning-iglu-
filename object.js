@@ -50,3 +50,7 @@ function Circle(radius) {
 //finally it will return an object from the Circle function    
 const circle2 = new Circle(1);
 const x = {};
+
+
+const now = new Date();
+const now2 = new Date
