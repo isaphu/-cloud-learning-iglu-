@@ -126,7 +126,7 @@ console.log(areSame(address3, address4))
 //constructor function
 const airlineRequest = {
     title: "request for special meal",
-    body: "Hi, I'd like to request for MOMLf or flight FD9890",
+    body: "Hi, I'd like to request for MOML for flight FD9890",
     author: "Isa Phuyuthanon",
     bookingNumber: "N0V8QC",
     views: 10,
