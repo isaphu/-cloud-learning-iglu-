@@ -98,3 +98,28 @@ function ShowFavs(favsFood, favsFruit, favsColor) {
 
 const favsObject = new ShowFavs("Padthai", "Banana", "Red")
 console.log(favsObject)
+
+
+//exercise three equal and same
+const address3 = {
+    street: "Kingston",
+    city: "Edinburgh",
+    zipCode: "99899"
+}
+
+const address4 = {
+    street: "Kingston",
+    city: "Edinburgh",
+    zipCode: "99899"
+}
+function areEqual(address3, address4) {
+    return address3.street === address4.street && address3.city === address4.city && address3.zipCode === address4.zipCode
+}
+
+function areSame(address3, address4) {
+    return address3 === address4
+}
+
+console.log(areEqual(address3, address4))
+console.log(areSame(address3, address4))
+
