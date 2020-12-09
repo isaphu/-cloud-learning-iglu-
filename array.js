@@ -56,3 +56,16 @@ while (numbers4.length > 0)
     numbers4.pop();
 
 console.log(numbers4)
+
+
+//combine an array and slice an array
+const first = [1, 2, 3, 4];
+const second = [5, 6, 7, 8];
+
+const combineArray = first.concat(second);
+console.log(combineArray)
+
+const slice = combineArray.slice(2, 4)
+console.log(slice);
+
+//the spread operator
