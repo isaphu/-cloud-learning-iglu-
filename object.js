@@ -123,3 +123,29 @@ function areSame(address3, address4) {
 console.log(areEqual(address3, address4))
 console.log(areSame(address3, address4))
 
+//constructor function
+const airlineRequest = {
+    title: "request for special meal",
+    body: "Hi, I'd like to request for MOMLf or flight FD9890",
+    author: "Isa Phuyuthanon",
+    bookingNumber: "N0V8QC",
+    views: 10,
+    comments: [
+        { author: "EVA", body: "meal request accepted" },
+        { author: "EVA", body: "meal request successfully" },
+    ],
+    isLive: true
+};
+
+let requestFromIsa = new AirlineRequest(airlineRequest.title, airlineRequest.body, airlineRequest.author, airlineRequest.bookingNumber, airlineRequest.comments[1])
+console.log(requestFromIsa)
+
+function AirlineRequest(title, body, author, bookingNumber, comments) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.bookingNumber = bookingNumber;
+    this.views = 0;
+    this.comments = comments;
+    this.isLive = false;
+}
