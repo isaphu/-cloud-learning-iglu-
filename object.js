@@ -70,3 +70,18 @@ function showAddress(address) {
 }
 
 showAddress(address)
+
+
+//exercise two factory and constructor 
+
+function showAddress2(address) {
+    return {
+        street: "Sukhumvit",
+        city: "Bangkok",
+        zipCode: 10110,
+        showAddress(address) {
+            for (let key in address)
+                console.log(key, address[key]);
+        }
+    }
+} 
