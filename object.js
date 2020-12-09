@@ -74,14 +74,27 @@ showAddress(address)
 
 //exercise two factory and constructor 
 
-function showAddress2(address) {
+//factory
+function showAddress2(street, city, zipCode) {
     return {
-        street: "Sukhumvit",
-        city: "Bangkok",
-        zipCode: 10110,
-        showAddress(address) {
-            for (let key in address)
-                console.log(key, address[key]);
-        }
-    }
-} 
+        street,
+        city,
+        zipCode
+    };
+}
+
+const showLondon = showAddress2("Kingston", "London", "W9090LLO");
+console.log(showLondon)
+
+
+
+
+//constructor 
+function ShowFavs(favsFood, favsFruit, favsColor) {
+    this.favsFood = favsFood;
+    this.favsFruit = favsFruit;
+    this.favsColor = favsColor;
+}
+
+const favsObject = new ShowFavs("Padthai", "Banana", "Red")
+console.log(favsObject)
