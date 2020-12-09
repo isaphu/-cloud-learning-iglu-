@@ -137,7 +137,7 @@ const airlineRequest = {
     isLive: true
 };
 
-let requestFromIsa = new AirlineRequest(airlineRequest.title, airlineRequest.body, airlineRequest.author, airlineRequest.bookingNumber, airlineRequest.comments[1])
+let requestFromIsa = new AirlineRequest(airlineRequest.title, airlineRequest.body, airlineRequest.author, airlineRequest.bookingNumber, airlineRequest.comments[1].body)
 console.log(requestFromIsa)
 
 function AirlineRequest(title, body, author, bookingNumber, comments) {
