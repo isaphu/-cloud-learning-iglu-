@@ -54,3 +54,19 @@ const x = {};
 
 const now = new Date();
 const now2 = new Date
+
+
+//exercise adresss
+
+const address = {
+    street: "Sukhumvit",
+    city: "Bangkok",
+    zipCode: 10110
+};
+
+function showAddress(address) {
+    for (let key in address)
+        console.log(key, address[key]);
+}
+
+showAddress(address)
