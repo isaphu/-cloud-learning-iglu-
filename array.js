@@ -60,12 +60,34 @@ console.log(numbers4)
 
 //combine an array and slice an array
 const first = [1, 2, 3, 4];
-const second = [5, 6, 7, 8];
+const seconds = [5, 6, 7, 8];
 
-const combineArray = first.concat(second);
+const combineArray = first.concat(seconds);
 console.log(combineArray)
 
 const slice = combineArray.slice(2, 4)
 console.log(slice);
 
 //the spread operator
+
+//like saying first.concat(second);
+const combined2 = [...first, ...seconds];
+
+combined2.slice();
+const copy = [...combined2];
+
+
+//iterating an array 
+for (let second of seconds)
+    console.log(second);
+
+seconds.forEach(function (seconds) {
+    console.log(seconds);
+})
+
+//or use the arrow function:
+seconds.forEach(seconds => console.log(seconds))
+
+//join an array
+const joined = first.join(':');
+console.log(joined);

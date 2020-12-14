@@ -149,4 +149,3 @@ function AirlineRequest(title, body, author, bookingNumber, comments) {
     this.comments = comments;
     this.isLive = false;
 }
-
