@@ -91,3 +91,10 @@ seconds.forEach(seconds => console.log(seconds))
 //join an array
 const joined = first.join(':');
 console.log(joined);
+
+//split and join 
+const text = 'This is my first text';
+const parts = text.split(' ');
+console.log(parts);
+const parts2 = parts.join('-');
+console.log(parts2);
