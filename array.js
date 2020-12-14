@@ -98,3 +98,53 @@ const parts = text.split(' ');
 console.log(parts);
 const parts2 = parts.join('-');
 console.log(parts2);
+
+//sorting 
+const numberInArray = [2, 3, 1];
+numberInArray.sort();
+console.log(numberInArray);
+
+numberInArray.reverse();
+console.log(numberInArray);
+
+const courseInfos = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'JavaScript' },
+    { id: 3, name: 'Django' },
+    { id: 4, name: 'AWS' },
+    { id: 5, name: 'TypeScript' },
+    { id: 6, name: 'C#' },
+];
+
+courseInfos.sort(function (a, b) {
+
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+});
+
+
+console.log(courseInfos);
+
+//testing an element of array using every and some
+
+const number11 = [1, 2, 3, 4, 5, 6, 7, -1];
+
+//.every check every element
+//.some check if atleast one meet the criteria
+
+const allPositive = number11.every(function (value) {
+    return value >= 0;
+});
+console.log(allPositive);
+
+//filtering 
+const filtered = number11.filter(n => n >= 0);
+console.log(filtered);
+
+//mapping
+const item = filtered.map(n => '<li>' + n + '</li>');
+console.log(item)
