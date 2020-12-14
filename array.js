@@ -152,9 +152,32 @@ console.log(item)
 
 //reducing and array
 const numbers5 = [1, -1, 2, 3, 9, 0, 8];
-
 const sum = numbers5.reduce(
     (accumulator, currentValue) => accumulator + currentValue
 );
-
 console.log(sum);
+
+//exercise 1 
+const arrayRange = arrayFromRange(1, -4)
+
+function arrayFromRange(min, max) {
+    const output = [];
+    for (let i = min; i <= max; i++)
+        output.push(i);
+    return output;
+}
+
+console.log(arrayRange)
+
+//exercise 2 include method
+
+const numberInArray2 = [1, 2, 3, 4];
+console.log(numberInArray2.includes(1));
+function includes(array, searchElement) {
+    for (let element of array)
+        if (element === searchElement)
+            return true;
+    return false;
+}
+
+console.log(includes(numberInArray2, 1))
