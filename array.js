@@ -173,11 +173,25 @@ console.log(arrayRange)
 
 const numberInArray2 = [1, 2, 3, 4];
 console.log(numberInArray2.includes(1));
+
 function includes(array, searchElement) {
     for (let element of array)
         if (element === searchElement)
             return true;
     return false;
 }
-
 console.log(includes(numberInArray2, 1))
+
+//except
+
+const output = except(numberInArray2, [1]);
+
+function except(array, excluded) {
+    const output = [];
+    for (let element of array)
+        if (!excluded.includes(element))
+            output.push(element);
+    return output;
+}
+
+console.log(output)
