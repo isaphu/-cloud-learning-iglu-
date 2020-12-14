@@ -148,3 +148,13 @@ console.log(filtered);
 //mapping
 const item = filtered.map(n => '<li>' + n + '</li>');
 console.log(item)
+
+
+//reducing and array
+const numbers5 = [1, -1, 2, 3, 9, 0, 8];
+
+const sum = numbers5.reduce(
+    (accumulator, currentValue) => accumulator + currentValue
+);
+
+console.log(sum);
