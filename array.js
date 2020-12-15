@@ -213,3 +213,62 @@ function move(array, index, offset) {
 
 console.log(output2);
 console.error(' ')
+
+//count occurrances
+
+const numbers7 = [1, 2, 3, 4, 1];
+
+const count2 = countOccurances(numbers7, 1);
+
+function countOccurances(array, searchElement) {
+    let count = 0;
+    for (let element of array)
+        if (element === searchElement)
+            count++;
+    return count;
+
+    return array.reduce((accumulator, current) => {
+        const occurrance = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurrance;
+    }, 0);
+}
+
+console.log(count2)
+
+//getmax
+const numbers8 = [1, 2, 3, 4];
+
+const max = getMax([1]);
+
+function getMax(array) {
+    if (array.length === 0) return undefined;
+
+    // let max = array[0];
+
+    // for (let i = 1; i < array.length; i++)
+    //     if (array[i] > max)
+    //         max = array[i];
+
+    // return max;
+
+    //or 
+
+    // return array.reduce((accumulator, current) => {
+    //     if (current > accumulator) return current;
+    //     return accumulator;
+
+    //or even cleaner
+    // return (current > accumulator) ? current : accumulator
+
+    // or even even cleaner
+    array.reduce((a, b) => (a > b) ? a : b);
+
+    // })
+}
+console.log(max)
+
+const movie = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title }
+]
