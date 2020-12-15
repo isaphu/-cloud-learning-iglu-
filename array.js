@@ -183,7 +183,6 @@ function includes(array, searchElement) {
 console.log(includes(numberInArray2, 1))
 
 //except
-
 const output = except(numberInArray2, [1]);
 
 function except(array, excluded) {
@@ -193,5 +192,24 @@ function except(array, excluded) {
             output.push(element);
     return output;
 }
-
 console.log(output)
+
+//moving an element 
+const numbers6 = [1, 2, 3, 4];
+
+const output2 = move(numbers6, 1, 2);
+
+function move(array, index, offset) {
+    const position = index + offset;
+    if (position >= array.length || position < 0) {
+        console.error('Invalid Offset!');
+        return;
+    }
+    const output2 = [...array];
+    const element = output2.splice(index, 1)[0];
+    output2.splice(index + offset, 0, element);
+    return output2
+}
+
+console.log(output2);
+console.error(' ')
