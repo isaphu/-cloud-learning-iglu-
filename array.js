@@ -268,7 +268,18 @@ function getMax(array) {
 }
 console.log(max)
 
-const movie = [
+const movies = [
     { title: 'a', year: 2018, rating: 4.5 },
-    { title }
-]
+    { title: 'b', year: 2017, rating: 4.7 },
+    { title: 'c', year: 2016, rating: 3 },
+    { title: 'd', year: 2018, rating: 4.2 }
+];
+
+const titles = movies
+    .filter(m => m.year === 2018 && m.rating >= 4)
+    .sort((a, b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
+
+
+console.log(titles);
