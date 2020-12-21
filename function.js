@@ -44,3 +44,23 @@ function sum(...args) {
 
 console.log(sum(1, 2, 3, 4, 6, 7, 8));
 
+
+//getters and setter
+
+//getter => access properties
+//setter => change (mutate) them 
+
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Hamedani',
+    get fullname() {
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+console.log(person)
